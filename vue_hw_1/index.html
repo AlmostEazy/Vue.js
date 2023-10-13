@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h3>task1</h3>
+      <button @click="textButton = textButton.split('').reverse('').join('')">
+        {{textButton}}
+      </button>
+      <br />
+      <h3>task2</h3>
+      <ul id="myList">
+        <li>Элемент1</li>
+        <li>Элемент2</li>
+        <li>Элемент3</li>
+      </ul>
+      <button @click="addElement">Добавить</button>
+      <button @click="deleteElement">Удалить</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      const App = {
+        data() {
+          return {
+            textButton: "Перевернуть",
+          };
+        },
+        methods: {
+          addElement() {
+            const li = document.createElement("li");
+            li.innerText = "Новый элемент списка";
+            const ul = document.getElementById("myList");
+            ul.appendChild(li);
+          },
+          deleteElement() {
+            const ul = document.getElementById("myList");
+            if (ul.childNodes.length > 0) {
+              ul.lastChild.remove();
+            }
+          },
+        },
+      };
+      Vue.createApp(App).mount("#app");
+    </script>
+  </body>
+</html>
