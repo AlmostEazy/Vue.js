@@ -30,9 +30,24 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    .header__name {
+      color: #292f36;
+      font-family: "DM Serif Display", serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%;
+    }
   }
 
   .header__nav {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+
     .nav {
       display: flex;
       list-style: none;
@@ -40,6 +55,7 @@ body {
 
       li {
         a {
+          color: #292f36;
           text-decoration: none;
         }
       }
@@ -61,15 +77,27 @@ body {
     align-items: center;
 
     &__info {
-      padding-left: 52px;
+      margin-left: 52px;
       width: 36.17%;
 
       h1 {
         margin-bottom: 18px;
+        font-family: "DM Serif Display", serif;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
       }
 
       h2 {
         margin-bottom: 21px;
+        color: #4d5053;
+        font-family: "Jost", sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.22px;
       }
 
       button {
@@ -84,6 +112,12 @@ body {
         background: #292f36;
         box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
         color: white;
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; /* 22.5px */
+        letter-spacing: 0.36px;
       }
     }
   }
@@ -101,9 +135,26 @@ body {
     gap: 8px;
     margin-bottom: 93px;
 
+    h2:first-child {
+      color: #292f36;
+      font-family: "DM Serif Display", serif;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 62.5px */
+      letter-spacing: 1px;
+    }
+
     h2:last-child {
-      width: 38.4%;
+      width: 61.4%;
       text-align: center;
+      color: #4d5053;
+      font-family: "Jost", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
     }
   }
 
@@ -119,6 +170,28 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        &__text {
+          h2:first-child {
+            color: #292f36;
+            font-family: "DM Serif Display", serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%; /* 31.25px */
+            letter-spacing: 0.5px;
+          }
+
+          h2:last-child {
+            color: #4d5053;
+            font-family: "Jost", sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 33px */
+            letter-spacing: 0.22px;
+          }
+        }
       }
       &__img {
         display: flex;
@@ -161,6 +234,26 @@ body {
       display: flex;
       flex-direction: column;
       gap: 16px;
+
+      h2 {
+        color: #cda274;
+        font-family: "DM Serif Display", serif;
+        font-size: 85px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 106.25px */
+        letter-spacing: 1.7px;
+      }
+
+      p {
+        color: #4d5053;
+        font-family: "Jost", sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 33px */
+        letter-spacing: 0.22px;
+      }
     }
 
     &__info:not(:last-child) {
@@ -190,7 +283,7 @@ body {
       }
 
       p {
-        width: 147px;
+        width: 148px;
         text-align: center;
       }
     }
@@ -228,9 +321,26 @@ body {
     gap: 12px;
     margin-bottom: 52px;
 
+    h2:first-child {
+      color: #292f36;
+      font-family: "DM Serif Display", serif;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 62.5px */
+      letter-spacing: 1px;
+    }
+
     h2:last-child {
-      width: 42.2%;
+      width: 67.6%;
       text-align: center;
+      color: #4d5053;
+      font-family: "Jost", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
     }
   }
 
@@ -241,12 +351,14 @@ body {
     justify-content: center;
 
     &__item {
-      border: 1px solid;
+      border: 1px solid #e7e7e7;
       border-radius: 62px;
       height: 521px;
 
       &__img {
         padding: 21px;
+        padding-bottom: 5px;
+        display: flex;
 
         img {
           border-top-right-radius: 45px;
@@ -259,19 +371,44 @@ body {
         padding-right: 21px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
+
+        &__text {
+          h2 {
+            color: #292f36;
+            font-family: "DM Serif Display", serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%; /* 31.25px */
+            letter-spacing: 0.5px;
+            width: 305px;
+            height: 70px;
+          }
+        }
 
         &__datas {
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          &__data {
+            color: #4d5053;
+            font-family: "Jost", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            letter-spacing: 0.16px;
+            text-transform: capitalize;
+          }
         }
       }
 
       &__tag {
         margin-left: 41px;
         position: relative;
-        top: -224px;
+        top: -233px;
         width: 124px;
         height: 41px;
         background-color: white;
@@ -281,6 +418,14 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        color: #4d5053;
+        font-family: "Jost", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.16px;
+        text-transform: capitalize;
       }
     }
 
@@ -304,10 +449,26 @@ body {
       align-items: center;
       margin-bottom: 18px;
       gap: 10px;
+
+      &__name {
+        color: #292f36;
+        font-family: "DM Serif Display", serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%; /* 50px */
+      }
     }
 
     h2 {
       margin-bottom: 26px;
+      color: #4d5053;
+      font-family: "Jost", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
     }
 
     &__links {
@@ -319,17 +480,29 @@ body {
   &__navigation {
     h2 {
       margin-bottom: 26px;
+      color: #292f36;
+      font-family: "DM Serif Display", serif;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 31.25px */
     }
 
     ul {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 30px;
 
       li {
         a {
           text-decoration: none;
+          color: #4d5053;
+          font-family: "Jost", sans-serif;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 300%; /* 66px */
+          letter-spacing: 0.22px;
         }
       }
     }
@@ -339,6 +512,45 @@ body {
     width: 21.5%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
+
+    h2 {
+      color: #292f36;
+      font-family: "DM Serif Display", serif;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 31.25px */
+    }
+
+    p:nth-child(2) {
+      color: #4d5053;
+      font-family: "Jost", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
+    }
+
+    p:nth-child(3) {
+      color: #4d5053;
+      font-family: "Jost", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 300%; /* 33px */
+      letter-spacing: 0.22px;
+    }
+
+    p:last-child {
+      color: #4d5053;
+      font-family: "Jost", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 300%; /* 33px */
+      letter-spacing: 0.22px;
+    }
   }
 }
