@@ -417,6 +417,9 @@ body {
   display: flex;
   gap: 54px;
 }
+.footer__inner__navigation {
+  width: 125px;
+}
 .footer__inner__navigation h2 {
   margin-bottom: 26px;
   color: #292f36;
@@ -430,6 +433,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .footer__inner__navigation ul li a {
   text-decoration: none;
