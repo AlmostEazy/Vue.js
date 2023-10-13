@@ -262,9 +262,9 @@ body {
         gap: 30px;
 
         &__datas {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
         }
       }
     }
@@ -272,5 +272,58 @@ body {
     &__item:nth-child(2) {
       background-color: #f4f0ec;
     }
+  }
+}
+
+.footer__inner {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 134px;
+
+  &__socials {
+    width: 32.75%;
+    &__main {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      gap: 10px;
+    }
+
+    h2 {
+      margin-bottom: 26px;
+    }
+
+    &__links {
+      display: flex;
+      gap: 54px;
+    }
+  }
+
+  &__navigation {
+    h2 {
+      margin-bottom: 26px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      li {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__contacts {
+    width: 21.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
