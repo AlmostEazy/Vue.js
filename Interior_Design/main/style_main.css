@@ -228,6 +228,20 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.news__items__item__tag {
+  margin-left: 41px;
+  position: relative;
+  top: -224px;
+  width: 124px;
+  height: 41px;
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .news__items__item:nth-child(2) {
   background-color: #f4f0ec;
 }
