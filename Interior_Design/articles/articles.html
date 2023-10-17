@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_articles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <title>Articles & News</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <div class="header__img">
+              <a href="#"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="header__name">Interno</div>
+          </div>
+          <div class="header__nav">
+            <ul class="nav">
+              <li class="home"><a href="#">Home</a></li>
+              <li class="project"><a href="#">Project</a></li>
+              <li class="blog"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="content">
+          <section class="description">
+            <div class="description__background">
+              <div class="description__background__info">
+                <h1 class="description__background__info__title">Articles & News</h1>
+                <h2 class="description__background__info__subtitle">Home / Blog</h1>
+              </div> 
+            </div>
+          </section>
+          <section class="posts">
+            <h2>Latest Post</h2>
+            <div class="posts__content">
+                <img class="posts__content__img" src="img/post_img.jpg" alt="photo">
+                <div class="posts__content__text">
+                    <h2>Low Cost Latest Invented Interior Designing Ideas</h2>
+                    <p>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.</p>
+                    <p>Lorem Ipsum is not simply random text. It has roots in a piece of classica.</p>
+                    <div class="posts__content__text__datas">
+                        <div class="posts__content__text__datas__data">
+                          <p>26 December,2022 </p>
+                        </div>
+                        <div class="posts__content__text__datas__arrow">
+                          <a href="#"><img src="img/arrow_in_circle.svg" alt="arrow" width="52"></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+          </section>
+          <section class="news">
+            <div class="news__text">
+              <h2 class="news__text__title">Articles & News</h2>
+            </div>
+            <div id="app" class="news__items">
+              <div class="news__items__item" v-for="item in articles" :key="item.id">
+                <div class="news__items__item__img">
+                  <img :src="item.img" alt="photo">
+                </div>
+                <div class="news__items__item__description">
+                  <div class="news__items__item__description__text">
+                    <h2>{{item.headerOne}}<br>{{item.headerTwo}}</h2>
+                  </div>
+                  <div class="news__items__item__description__datas">
+                    <div class="news__items__item__description__datas__data">
+                      <p>{{item.date}}</p>
+                    </div>
+                    <div class="news__items__item__description__datas__arrow">
+                      <a href="#"><img :src="item.arrow" alt="arrow" width="52"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__items__item__tag">
+                  <p>{{item.rectangle}}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="news__pagination">
+            <div class="news__pagination__items">
+                <div class="news__pagination__items__item">
+                    <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                    </svg>
+                    <p>01</p>
+                </div>
+                <div class="news__pagination__items__item">
+                    <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                    </svg>
+                    <p>02</p>
+                </div>
+                <div class="news__pagination__items__item">
+                    <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                    </svg>
+                    <p>03</p>
+                </div>
+                <div class="news__pagination__items__item">
+                    <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                        <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__inner__socials">
+            <div class="footer__inner__socials__main">
+              <div class="footer__inner__socials__main__img">
+                <a href="#"><img src="img/logo.svg" alt="logo"></a>
+              </div>
+              <div class="footer__inner__socials__main__name">Interno</div>
+            </div>
+            <h2>It is a long established fact that a reader will be distracted lookings.</h2>
+            <div class="footer__inner__socials__links">
+              <a href="#"><img src="img/bird_link.svg" alt="link"></a>
+              <a href="#"><img src="img/in_link.svg" alt="link"></a>
+            </div>
+          </div>
+          <div class="footer__inner__navigation">
+            <h2>Pages</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer__inner__contacts">
+            <h2>Contact</h2>
+            <p>55 East Birchwood Ave. Brooklyn, New York 11201</p>
+            <p>contact@interno.com</p>
+            <p>(123) 456 - 7890</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const App = {
+            data() {
+                return {
+                    articles: [
+                    {
+                        id: 1, img: "img/news_photo_one.jpg", rectangle: "Kitchen Design", headerOne: "Let’s Get Solution For Building Construction", headerTwo: "Work", date: "26 December,2022", arrow: "img/arrow_in_circle.svg"
+                    },
+                    {
+                        id: 2, img: "img/news_photo_two.jpg", rectangle: "Living Design", headerOne: "Low Cost Latest Invented Interior Designing", headerTwo: "Ideas", date: "22 December,2022", arrow: "img/arrow_in_circle_white.svg"
+                    },
+                    {
+                        id: 3, img: "img/news_photo_three.jpg", rectangle: "Interior Design", headerOne: "Best For Any Office & Business Interior", headerTwo: "Solution", date: "25 December,2022", arrow: "img/arrow_in_circle.svg"
+                    },
+                    {
+                        id: 4, img: "img/news_photo_four.jpg", rectangle: "Kitchen Design", headerOne: "Let’s Get Solution For Building Construction", headerTwo: "Work", date: "26 December,2022", arrow: "img/arrow_in_circle.svg"
+                    },
+                    {
+                        id: 5, img: "img/news_photo_five.jpg", rectangle: "Living Design", headerOne: "Low Cost Latest Invented Interior Designing", headerTwo: "Ideas", date: "22 December,2022", arrow: "img/arrow_in_circle.svg"
+                    },
+                    {
+                        id: 6, img: "img/news_photo_six.jpg", rectangle: "Interior Design", headerOne: "Best For Any Office & Business Interior", headerTwo: "Solution", date: "25 December,2022", arrow: "img/arrow_in_circle.svg"
+                    },
+                    ]
+                };  
+            }
+        };
+        Vue.createApp(App).mount("#app");
+      </script>
+  </body>
+</html>
