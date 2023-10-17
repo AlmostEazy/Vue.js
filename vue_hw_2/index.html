@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h3>list of products</h3>
+        <button @click="sortDecrease">Сначала дорогие</button>
+        <button @click="sortIncrease">Сначала дешевые</button>
+        <ul>
+            <li v-for="item in products" :key="item.id">
+                {{ item.name }}, {{ item.price }}
+            </li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const App = {
+            data() {
+                return {
+                    products: [
+                    {id: 1, name: "sweets", price: 155},
+                    {id: 2, name: "milk", price: 90},
+                    {id: 3, name: "apples", price: 50},
+                    {id: 4, name: "oranges", price: 65},
+                    {id: 5, name: "cucumbers", price: 45},
+                    {id: 6, name: "beer", price: 100}
+                    ],
+                }
+            },
+            methods: {
+                sortDecrease() {
+                    this.products = this.products.sort((a, b) => {
+                        if (a.price < b.price) return 1;
+                        if (a.price === b.price) return 0;
+                        if (a.price > b.price) return -1;
+                    })
+                },
+                sortIncrease() {
+                    this.products = this.products.sort((a, b) => {
+                        if (a.price > b.price) return 1;
+                        if (a.price === b.price) return 0;
+                        if (a.price < b.price) return -1;
+                    })
+                }
+            },
+        };
+        Vue.createApp(App).mount("#app");
+    </script>
+</body>
+
+</html>
