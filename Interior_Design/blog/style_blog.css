@@ -82,6 +82,8 @@ body {
 .description .blog__article__item .blog__article__imgFirst {
   margin-bottom: 46px;
   border-radius: 50px;
+  width: 800px;
+  height: 540px;
 }
 .description .blog__article__item .blog__article__nav {
   display: flex;
@@ -137,6 +139,8 @@ body {
 .description .blog__article__item .blog__article__imgSecond {
   margin-bottom: 35px;
   border-radius: 50px;
+  width: 800px;
+  height: 365px;
 }
 .description .blog .tags {
   width: 30%;

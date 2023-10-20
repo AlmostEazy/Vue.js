@@ -46,7 +46,7 @@ const articles ={
                 subheader:"Design is not a single object or dimension",
                 textThird:`Buildings serve several societal needs – occupancy, primarily as shelter from weather, security, living space, privacy, 
                 to store belongings, and to comfortably live and work.`,
-                imgSecond:"img/blog6.png",
+                imgSecond:"img/blog6.jpg",
                 textFourth:`There is clear evidence of homebuilding from around 18,000 BC.`
             },
             {
@@ -60,7 +60,7 @@ const articles ={
                 textThird:`Architecture is the discipline of designing and building a range of structures that are used to meet both functional and aesthetic requirements. 
                 Since every culture has a unique relationship with the natural world and with the other cultures around them, the structures it creates convey a great 
                 deal about its traditions, history, environment, artistic sensibilities, and many other facets of everyday life.`,
-                imgSecond:"img/blog8.jpeg",
+                imgSecond:"img/blog8.jpg",
                 textFourth:`In architecture, all of these requirements must be satisfied. The second requirement listed is regarded as a constant, whereas the first and third 
                 change in importance depending on the social utility of the structure. `
             },
@@ -75,7 +75,7 @@ const articles ={
                 quote:"Good design is good business.",
                 subheader:"Planning a kitchen: how much does it cost?",
                 textThird:`On average, kitchen buyers in German-speaking countries spend €7,125 (as of 2018, published May 2019, statista.com) to buy their new kitchen. `,
-                imgSecond:"img/blog10.jpeg",
+                imgSecond:"img/blog10.jpg",
                 textFourth:`However, the upscale premium segment in particular is booming: a growing group of buyers is forming in the kitchen segment starting at 12,000 euros, 
                 who see kitchens as a high-quality, long-lasting investment. Correspondingly, a lot of financial reserves are therefore increasingly being used for planning 
                 a kitchen instead of for a new car or a vacation.`
