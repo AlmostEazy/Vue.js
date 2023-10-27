@@ -56,36 +56,42 @@ body {
   text-decoration: none;
 }
 
-.description__background {
+.blog__description__background {
   background-image: url(img/blog_background.jpg);
   height: 351px;
   margin-bottom: 200px;
 }
-.description .blog {
+.blog__description .blog {
   display: flex;
   flex-direction: row;
   gap: 52px;
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
-.description .blog__article {
+.blog__description .blog__article {
   width: 67%;
 }
-.description .blog__article__item {
+.blog__description .blog__article__item {
   margin-bottom: 96px;
 }
-.description .blog__article__item .blog__article__header {
+.blog__description .blog__article__item .blog__article__header {
+  color: #292f36;
+  font-family: "DM Serif Display", serif;
   font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 62.5px */
+  letter-spacing: 1px;
   margin-bottom: 21px;
   padding-right: 115px;
 }
-.description .blog__article__item .blog__article__imgFirst {
+.blog__description .blog__article__item .blog__article__imgFirst {
   margin-bottom: 46px;
   border-radius: 50px;
   width: 800px;
   height: 540px;
 }
-.description .blog__article__item .blog__article__nav {
+.blog__description .blog__article__item .blog__article__nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -96,13 +102,13 @@ body {
   padding-right: 80px;
   margin-bottom: 48px;
 }
-.description .blog__article__item .blog__article__text {
+.blog__description .blog__article__item .blog__article__text {
   font-family: "Jost", sans-serif;
   font-size: 22px;
   color: #4d5053;
   margin-bottom: 35px;
 }
-.description .blog__article__item .blog__article__quote {
+.blog__description .blog__article__item .blog__article__quote {
   height: 267px;
   background-color: #f4f0ec;
   border-radius: 50px;
@@ -114,42 +120,49 @@ body {
   padding-left: 227px;
   padding-right: 227px;
 }
-.description .blog__article__item .blog__article__quote p {
+.blog__description .blog__article__item .blog__article__quote p {
+  font-family: "DM Serif Display", serif;
   font-size: 25px;
   font-style: italic;
   color: #cda274;
   text-align: center;
 }
-.description .blog__article__item .blog-article__subheader {
+.blog__description .blog__article__item .blog__article__subheader {
+  color: #292f36;
+  font-family: "DM Serif Display", serif;
   font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 62.5px */
+  letter-spacing: 1px;
   margin-bottom: 20px;
 }
-.description .blog__article__item ol {
+.blog__description .blog__article__item ol {
   padding-left: 23px;
 }
-.description .blog__article__item li {
+.blog__description .blog__article__item li {
   font-family: "Jost", sans-serif;
   font-size: 22px;
   color: #4d5053;
   margin-bottom: 35px;
 }
-.description .blog__article__item li::marker {
+.blog__description .blog__article__item li::marker {
   color: #cda274;
 }
-.description .blog__article__item .blog__article__imgSecond {
+.blog__description .blog__article__item .blog__article__imgSecond {
   margin-bottom: 35px;
   border-radius: 50px;
   width: 800px;
   height: 365px;
 }
-.description .blog .tags {
+.blog__description .blog .tags {
   width: 30%;
 }
-.description .blog .tags__header {
+.blog__description .blog .tags__header {
   margin-bottom: 24px;
   font-size: 25px;
 }
-.description .blog .tags__buttons__item {
+.blog__description .blog .tags__buttons__item {
   margin-bottom: 10px;
   margin-right: 10px;
   border-radius: 10px;
@@ -160,7 +173,7 @@ body {
   font-size: 18px;
   color: #4d5053;
 }
-.description .blog .tags__buttons__item:hover {
+.blog__description .blog .tags__buttons__item:hover {
   background-color: #292f36;
   color: #fff;
   cursor: pointer;

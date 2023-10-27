@@ -104,7 +104,7 @@ const articles ={
                     <p class="blog__article__text">
                         {{item.textFirst}}
                     </p>
-                    <p 
+                    <p class="blog__article__text">
                         {{item.textSecond}}
                     </p>
                     <div class="blog__article__quote">

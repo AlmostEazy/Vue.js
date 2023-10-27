@@ -63,7 +63,7 @@ body {
   }
 }
 
-.description {
+.blog__description {
   &__background {
     background-image: url(img/blog_background.jpg);
     height: 351px;
@@ -84,7 +84,13 @@ body {
         margin-bottom: 96px;
 
         .blog__article__header {
+          color: #292f36;
+          font-family: "DM Serif Display", serif;
           font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%; /* 62.5px */
+          letter-spacing: 1px;
           margin-bottom: 21px;
           padding-right: 115px;
         }
@@ -128,6 +134,7 @@ body {
           padding-right: 227px;
 
           p {
+            font-family: "DM Serif Display", serif;
             font-size: 25px;
             font-style: italic;
             color: #cda274;
@@ -135,8 +142,14 @@ body {
           }
         }
 
-        .blog-article__subheader {
+        .blog__article__subheader {
+          color: #292f36;
+          font-family: "DM Serif Display", serif;
           font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%; /* 62.5px */
+          letter-spacing: 1px;
           margin-bottom: 20px;
         }
 

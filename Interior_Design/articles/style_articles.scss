@@ -63,7 +63,7 @@ body {
   }
 }
 
-.description {
+.articles__description {
   &__background {
     background-image: url(img/articles_background.jpg);
     height: 356px;
@@ -104,7 +104,7 @@ body {
   }
 }
 
-.posts {
+.articles__posts {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
   margin-bottom: 150px;
@@ -306,7 +306,7 @@ body {
   }
 }
 
-.news__pagination {
+.articles__news__pagination {
   padding-left: calc(50% - 134px);
   padding-right: calc(50% - 134px);
   margin-bottom: 200px;
