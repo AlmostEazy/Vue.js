@@ -24,7 +24,7 @@
                         </div>
                         <div class="projects__project__content">            
                             <div class="projects__project__content__item"  v-for="project in temp" :key="project.id" @click="addFavourite">
-                                <img :src="project.img" alt="">
+                                <img :class="project.className" :src="project.img" alt="photo">
                                 <svg class="star" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_993_142)">
                                         <path d="M16.0992 1.80951C16.7004 -0.0279021 19.2996 -0.0279021 19.9008 1.80951L21.7983 7.60879C22.0673 8.43084 22.8342 8.98685 23.6992 8.98685H29.8097C31.7506 8.98685 32.5539 11.4732 30.98 12.6088L26.0604 16.1581C25.3546 16.6674 25.0591 17.5748 25.3298 18.402L27.2146 24.1623C27.8166 26.0025 25.7137 27.539 24.1435 26.4062L19.1702 22.818C18.4715 22.3139 17.5285 22.3139 16.8298 22.818L11.8565 26.4062C10.2863 27.539 8.18335 26.0025 8.78545 24.1623L10.6702 18.402C10.9409 17.5748 10.6454 16.6674 9.93955 16.1581L5.02004 12.6088C3.44611 11.4732 4.24942 8.98685 6.19025 8.98685H12.3008C13.1658 8.98685 13.9327 8.43084 14.2017 7.60879L16.0992 1.80951Z" 
@@ -94,224 +94,256 @@ export default {
                     tag: "bedroom",
                     img: img21,
                     title: "Minimal Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big"                     
                 },
                 {
                     id: 2,
                     tag: "bedroom",
                     img: img22,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 3,
                     tag: "bedroom",
                     img: img23,
                     title: "System Table",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 4,
                     tag: "bedroom",
                     img: img24,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 5,
                     tag: "bedroom",
                     img: img25,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 6,
                     tag: "bedroom",
                     img: img26,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 7,
                     tag: "bedroom",
                     img: img27,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 8,
                     tag: "bedroom",
                     img: img28,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 9,
                     tag: "bathroom",
                     img: img29,
                     title: "Bathroom Suites",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 10,
                     tag: "bathroom",
                     img: img30,
                     title: "Bathroom Furniture & Cabinets",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 11,
                     tag: "bathroom",
                     img: img31,
                     title: "Baths & Accessories",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 12,
                     tag: "bathroom",
                     img: img32,
                     title: "Bathroom Wall & Floor Tiles",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 13,
                     tag: "bathroom",
                     img: img33,
                     title: "Bathroom Lighting",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 14,
                     tag: "bathroom",
                     img: img34,
                     title: "Bathroom Flooring",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 15,
                     tag: "bathroom",
                     img: img35,
                     title: "Bathroom Paint",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 16,
                     tag: "bathroom",
                     img: img36,
                     title: "Bathroom Suite Packages",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 17,
                     tag: "kitchen",
                     img: img37,
                     title: "Kitchen island",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 18,
                     tag: "kitchen",
                     img: img38,
                     title: "Luxury kitchen",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 19,
                     tag: "kitchen",
                     img: img39,
                     title: "Restaurant interior",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 20,
                     tag: "kitchen",
                     img: img40,
                     title: "Kitchen wall",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 21,
                     tag: "kitchen",
                     img: img41,
                     title: "Kitchen countertop",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 22,
                     tag: "kitchen",
                     img: img42,
                     title: "Modern kitchen",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 23,
                     tag: "kitchen",
                     img: img43,
                     title: "Kitchen background",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 24,
                     tag: "kitchen",
                     img: img44,
                     title: "Kitchen furniture",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 25,
                     tag: "livingroom",
                     img: img45,
                     title: "Levitate Your Living",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 26,
                     tag: "livingroom",
                     img: img46,
                     title: "Living Room Trend",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 27,
                     tag: "livingroom",
                     img: img47,
                     title: "Try More Observant Design",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 28,
                     tag: "livingroom",
                     img: img48,
                     title: "Multifunctional, Airy Spaces",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 29,
                     tag: "livingroom",
                     img: img49,
                     title: "Colour Living",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 30,
                     tag: "livingroom",
                     img: img50,
                     title: "Modern Scandinavian Interiors",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 31,
                     tag: "livingroom",
                     img: img51,
                     title: "Zoning Out",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 32,
                     tag: "livingroom",
                     img: img52,
                     title: "Wallpapers & Wallcoverings",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
             ]
         return{
@@ -322,56 +354,64 @@ export default {
                     tag: "bedroom",
                     img: img21,
                     title: "Minimal Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 2,
                     tag: "bedroom",
                     img: img22,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 3,
                     tag: "bedroom",
                     img: img23,
                     title: "System Table",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 4,
                     tag: "bedroom",
                     img: img24,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 5,
                     tag: "bedroom",
                     img: img25,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 6,
                     tag: "bedroom",
                     img: img26,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "big" 
                 },
                 {
                     id: 7,
                     tag: "bedroom",
                     img: img27,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
                 {
                     id: 8,
                     tag: "bedroom",
                     img: img28,
                     title: "Modern Bedroom",
-                    subtitle: "Decor / Artchitecture" 
+                    subtitle: "Decor / Artchitecture",
+                    className: "little" 
                 },
             ],
         }
@@ -432,17 +472,27 @@ export default {
         }
         &__content {
             column-count: 2;
-            column-gap: 0;
+            column-gap: 27px;
             
             &__item {
                break-inside: avoid;
-               max-width: 563px;
+               max-width: 585px;
                position: relative;
                margin-bottom: 36px;
 
                img {
                 max-width: 100%;
                 margin-bottom: 24px;
+               }
+
+               .little {
+                height: 522px;
+                width: 585px;
+               }
+
+               .big {
+                height: 853px;
+                width: 585px;
                }
                .star {
                     position: absolute;
