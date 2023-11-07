@@ -22,24 +22,22 @@
     }
   }
 
-  .header__nav {
+  .header__navigation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
     font-family: "Jost", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
 
-    .nav {
-      display: flex;
-      list-style: none;
-      gap: 50px;
-
-      li {
-        a {
-          color: #292f36;
-          text-decoration: none;
-        }
-      }
+    &__nav {
+      color: #292f36;
+      text-decoration: none;
     }
+    &__nav:hover{
+      color: #CDA274;
+  }
   }
 }

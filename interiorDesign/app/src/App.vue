@@ -1,44 +1,28 @@
 <template>
   <HeaderBlock />
-  <MainPage />
-  <FooterBlock />
-  <HeaderBlock />
-  <ArticlesPage />
-  <FooterBlock />
-  <HeaderBlock />
-  <BlogPage />
-  <FooterBlock />
-  <HeaderBlock />
-  <ProjectPage />
-  <FooterBlock />
-  <HeaderBlock />
-  <ProjectDetailsPage />
+  <router-view />
   <FooterBlock />
 </template>
 
 <script>
-import MainPage from './components/MainPage.vue';
-import ArticlesPage from './components/ArticlesPage.vue';
-import BlogPage from './components/BlogPage.vue';
-import ProjectPage from './components/ProjectPage.vue';
-import ProjectDetailsPage from './components/ProjectDetailsPage.vue';
-import HeaderBlock from './components/commonComponents/HeaderBlock.vue';
-import FooterBlock from './components/commonComponents/FooterBlock.vue';
+// import MainPage from "./views/MainPage.vue";
+// import ArticlesPage from "./views/ArticlesPage.vue";
+// import BlogPage from "./views/BlogPage.vue";
+// import ProjectPage from "./views/ProjectPage.vue";
+// import ProjectDetailsPage from "./views/ProjectDetailsPage.vue";
+import HeaderBlock from "./components/HeaderBlock.vue";
+import FooterBlock from "./components/FooterBlock.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MainPage,
-    ArticlesPage,
-    BlogPage,
-    ProjectPage,
-    ProjectDetailsPage,
+    // MainPage,
+    // ArticlesPage,
+    // BlogPage,
+    // ProjectPage,
+    // ProjectDetailsPage,
     HeaderBlock,
     FooterBlock
-  }  
-}
+  },
+};
 </script>
-
-<style lang="scss">
-
-</style>

@@ -5,14 +5,14 @@
           <div class="footer__inner__socials">
             <div class="footer__inner__socials__main">
               <div class="footer__inner__socials__main__img">
-                <a href="#"><img src="../../assets/img/logo.svg" alt="logo"></a>
+                <a href="#"><img src="../assets/img/logo.svg" alt="logo"></a>
               </div>
               <div class="footer__inner__socials__main__name">Interno</div>
             </div>
             <h2>It is a long established fact that a reader will be distracted lookings.</h2>
             <div class="footer__inner__socials__links">
-              <a href="#"><img src="../../assets/img/bird_link.svg" alt="link"></a>
-              <a href="#"><img src="../../assets/img/in_link.svg" alt="link"></a>
+              <a href="#"><img src="../assets/img/bird_link.svg" alt="link"></a>
+              <a href="#"><img src="../assets/img/in_link.svg" alt="link"></a>
             </div>
           </div>
           <div class="footer__inner__navigation">

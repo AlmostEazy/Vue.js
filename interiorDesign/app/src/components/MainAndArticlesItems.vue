@@ -1,5 +1,8 @@
 <template>
-  <div class="news__items__item">
+  <router-link
+    class="news__items__item"
+    :to="{ name: 'BlogDetails', params: { id: article.id } }"
+  >
     <div class="news__items__item__img">
       <img :src="article.img" alt="photo" />
     </div>
@@ -19,7 +22,7 @@
     <div class="news__items__item__tag">
       <p>{{ article.rectangle }}</p>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>

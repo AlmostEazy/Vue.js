@@ -57,11 +57,9 @@
                   <h2>Modern Kitchan</h2>
                   <h2>Decor / Artchitecture</h2>
                 </div>
-                <div class="our__projects__items__item__description__arrow">
-                  <a href="#"
-                    ><img src="../assets/img/arrow_in_circle.svg" alt="arrow"
-                  /></a>
-                </div>
+                <router-link class="our__projects__items__item__description__arrow" :to="{name: 'ProjectDetails', params:{id: 1}}">
+                  <img src="../assets/img/arrow_in_circle.svg" alt="arrow"/>                        
+                </router-link>
               </div>
             </div>
             <div class="our__projects__items__item">
@@ -79,11 +77,9 @@
                   <h2>Modern Kitchan</h2>
                   <h2>Decor / Artchitecture</h2>
                 </div>
-                <div class="our__projects__items__item__description__arrow">
-                  <a href="#"
-                    ><img src="../assets/img/arrow_in_circle.svg" alt="arrow"
-                  /></a>
-                </div>
+                <router-link class="our__projects__items__item__description__arrow" :to="{name: 'ProjectDetails', params:{id: 2}}">
+                  <img src="../assets/img/arrow_in_circle.svg" alt="arrow"/>                        
+                </router-link>
               </div>
             </div>
             <div class="our__projects__items__item">
@@ -101,11 +97,9 @@
                   <h2>Modern Kitchan</h2>
                   <h2>Decor / Artchitecture</h2>
                 </div>
-                <div class="our__projects__items__item__description__arrow">
-                  <a href="#"
-                    ><img src="../assets/img/arrow_in_circle.svg" alt="arrow"
-                  /></a>
-                </div>
+                <router-link class="our__projects__items__item__description__arrow" :to="{name: 'ProjectDetails', params:{id: 3}}">
+                  <img src="../assets/img/arrow_in_circle.svg" alt="arrow"/>                        
+                </router-link>
               </div>
             </div>
             <div class="our__projects__items__item">
@@ -123,11 +117,9 @@
                   <h2>Modern Kitchan</h2>
                   <h2>Decor / Artchitecture</h2>
                 </div>
-                <div class="our__projects__items__item__description__arrow">
-                  <a href="#"
-                    ><img src="../assets/img/arrow_in_circle.svg" alt="arrow"
-                  /></a>
-                </div>
+                <router-link class="our__projects__items__item__description__arrow" :to="{name: 'ProjectDetails', params:{id: 4}}">
+                  <img src="../assets/img/arrow_in_circle.svg" alt="arrow"/>                        
+                </router-link>
               </div>
             </div>
           </div>
@@ -171,7 +163,7 @@
 </template>
 
 <script>
-import MainAndArticlesItems from "./commonComponents/MainAndArticlesItems.vue";
+import MainAndArticlesItems from "../components/MainAndArticlesItems.vue";
 import img17 from "../assets/img/news_photo_one.jpg";
 import img18 from "../assets/img/news_photo_two.jpg";
 import img19 from "../assets/img/news_photo_three.jpg";

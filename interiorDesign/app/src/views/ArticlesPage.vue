@@ -60,8 +60,8 @@
 </template>
 
 <script>
-import MainAndArticlesItems from "./commonComponents/MainAndArticlesItems.vue";
-import PaginationBlock from "./commonComponents/PaginationBlock.vue";
+import MainAndArticlesItems from "../components/MainAndArticlesItems.vue";
+import PaginationBlock from "../components/PaginationBlock.vue";
 import img1 from "../assets/img/news_photo_one.jpg";
 import img2 from "../assets/img/news_photo_two.jpg";
 import img3 from "../assets/img/news_photo_three.jpg";
@@ -82,6 +82,7 @@ export default {
           headerTwo: "Work",
           date: "26 December,2022",
           arrow: img20,
+          tag: "Kitchen"
         },
         {
           id: 2,
@@ -91,6 +92,7 @@ export default {
           headerTwo: "Ideas",
           date: "22 December,2022",
           arrow: img20,
+          tag: "Bedroom"
         },
         {
           id: 3,
@@ -100,6 +102,7 @@ export default {
           headerTwo: "Solution",
           date: "25 December,2022",
           arrow: img20,
+          tag: "Building"
         },
         {
           id: 4,
@@ -109,6 +112,7 @@ export default {
           headerTwo: "Work",
           date: "26 December,2022",
           arrow: img20,
+          tag: "Kitchen"
         },
         {
           id: 5,
@@ -118,6 +122,7 @@ export default {
           headerTwo: "Ideas",
           date: "22 December,2022",
           arrow: img20,
+          tag: "Bedroom"
         },
         {
           id: 6,
@@ -127,6 +132,7 @@ export default {
           headerTwo: "Solution",
           date: "25 December,2022",
           arrow: img20,
+          tag:"Kitchen Planning"
         },
       ],
     };

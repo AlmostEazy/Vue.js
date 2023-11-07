@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import BlogPageItems from './BlogPageItems.vue';
+import BlogPageItems from '../components/BlogPageItems.vue';
     export default {
         components: {
             BlogPageItems

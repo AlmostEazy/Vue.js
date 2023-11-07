@@ -7,9 +7,9 @@
         </section>
         <section class="projectDetails__content">
           <div class="projectDetails__content__description">
-            <h1>{{ header }}</h1>
-            <p>{{ text1 }}</p>
-            <p>{{ text2 }}</p>
+            <h1>{{ art.header }}</h1>
+            <p>{{ art.text1 }}</p>
+            <p>{{ art.text2 }}</p>
           </div>
           <swiper
             :style="{
@@ -26,17 +26,17 @@
           >
             <swiper-slide>
               <div class="swiper-zoom-container">
-                <img :src="img1" alt="photo" />
+                <img :src="art.img1" alt="photo" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="swiper-zoom-container">
-                <img :src="img2" alt="photo" />
+                <img :src="art.img2" alt="photo" />
               </div>
             </swiper-slide>
             <swiper-slide>
               <div class="swiper-zoom-container">
-                <img :src="img3" alt="photo" />
+                <img :src="art.img3" alt="photo" />
               </div>
             </swiper-slide>
           </swiper>
@@ -76,7 +76,10 @@ export default {
     };
   },
   computed: {
-    ...mapState(["header", "text1", "text2"]),
+    ...mapState(["articles"]),
+    art() {
+      return this.articles.find((art) => art.id === Number(this.$route.params.id));
+    }
   },
 };
 </script>
